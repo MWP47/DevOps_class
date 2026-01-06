@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        python 'Python3'
+    }
+
     stages {
         stage('Setup Python Environment') {
             steps {
